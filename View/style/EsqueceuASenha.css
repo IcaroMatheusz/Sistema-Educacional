@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+.tit {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+    margin-bottom: 22px;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, button {
+    margin-bottom: 30px;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin-left: 32px;
+    padding: 12px;    
+}
+
+label {
+    font-size: 17px;
+}
+
+button {
+    width: 30%;
+    padding: 14px;
+    cursor: pointer;
+    margin-left: 12px;
+}

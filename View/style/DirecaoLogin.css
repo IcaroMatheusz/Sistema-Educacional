@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 2px solid rgb(20, 20, 20);
+    padding: 20px;
+
+}
+
+legend {
+    font-size: 18px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    margin-left: 32px;
+    margin-bottom: 10px;
+}
+
+.quest {
+    margin-bottom: 10px;
+}
+
+.pass {
+    margin-left: 44px;
+}
+
+.userpass {
+    margin-top: 20px;
+}
+
+
+header {
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+.tit {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+    margin-bottom: 22px;
+}
+
+a {
+    margin-left: 190px;
+}
+
+.entrar {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+button {
+    padding: 14px;
+    cursor: pointer;
+}
