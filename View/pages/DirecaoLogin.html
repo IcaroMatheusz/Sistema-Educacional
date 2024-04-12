@@ -5,40 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Direção Login</title>
     <link rel="stylesheet" href="/View/style/DirecaoLogin.css">
-    <script src="/Model/index.js"></script>
+    <script src="/Model/LoginButton.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
-
         <div class="eds">
-            <h3>
-                Edu Station
-            </h3>
+            <h3>Edu Station</h3>
         </div>
-
         <div class="tit">
-            <h1>
-                Direção Workstation
-            </h1>
+            <h1>Direção Workstation</h1>
         </div>
-        
     </header>
 
     <section>
         <fieldset>
-
             <legend>Login</legend>
             <form>
-
                 <div class="userpass">
                     <label>Usuário</label>
-                    <input type="text" name="usuario" placeholder="Nome de Usuário" maxlength="38">
+                    <input type="text" name="usuario" id="user" placeholder="Nome de Usuário" oninput="validateFields()" maxlength="38">
                 </div>
 
                 <div class="userpass">
                     <label>Senha</label>
-                    <input type="password" name="password" placeholder="Senha" class="pass" maxlength="12">
+                    <input type="password" name="password" id="password" placeholder="Senha" class="pass" oninput="validateFields()" maxlength="12">
                 </div>
 
                 <div class="quest">
@@ -50,12 +43,9 @@
                 </div>
 
                 <div class="entrar">
-                    <button type="button">Entrar</button>
+                    <button type="button" id="enter-button" disabled>Entrar</button>
                 </div>
-
             </form>
-    </fieldset>
+        </fieldset>
     </section>
-
 </body>
-</html>

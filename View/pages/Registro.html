@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Usuário</title>
     <link rel="stylesheet" href="/View/style/Registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="/Model/RegisterButton.js"></script>
 </head>
 <body>
 
@@ -23,50 +27,42 @@
         </div>
         
     </header>
+
     <h1>Direção</h1>
     <hr>
     <section>
-        
         
         <fieldset>
 
             <legend>Cadastro Direção</legend>
             <form>
-
                 <div class="user">
                     <label>Nome</label>
-                    <input type="text" name="usuario" placeholder="Nome de Usuário" maxlength="38">
+                    <input type="text" name="usuario" id="user" placeholder="Nome de Usuário" oninput="validateFields()" maxlength="38">
                 </div>
-
                 <div class="usercpf">
                     <label>CPF</label>
-                    <input type="text" name="cpf" placeholder="Digite seu CPF" maxlength="11">
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" oninput="validateFields()" maxlength="11">
                 </div>
-
                 <div class="date">
                     <label>Data de Nascimento</label>
-                    <input type="date" name="data">
+                    <input type="date" id="date" name="data" oninput="validateFields()">
                 </div>
-
                 <div class="email">
                     <label>Email</label>
-                    <input type="email" name="email" placeholder="Digite seu e-mail">
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" oninput="validateFields()" maxlength="256">
                 </div>
-
                 <div class="userpass">
                     <label>Senha</label>
-                    <input type="password" name="password" placeholder="Senha" class="pass" maxlength="12">
+                    <input type="password" id="pass" name="password" placeholder="Senha" class="pass" oninput="validateFields()" maxlength="12">
                 </div>
-
                 <div class="userpass">
                     <label>Confirmar Senha</label>
-                    <input type="password" name="password" placeholder="Confirmar Senha" class="pass" maxlength="12">
+                    <input type="password" id="conpass" name="password" placeholder="Confirmar Senha" class="pass" oninput="validateFields()" maxlength="12">
                 </div>
-
                 <div class="create">
-                    <button type="button">Criar Usuário</button>
+                    <button type="button" id="create-button" disabled>Criar Usuário</button>
                 </div>
-
             </form>
         </fieldset>
     </section>
