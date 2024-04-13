@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="/Model/GerarSenha.js"></script>
 </head>
 <body>
 
@@ -40,7 +41,7 @@
         <fieldset>
 
             <legend>Cadastro Aluno (a)</legend>
-            <form action="Registro.php" method="POST">
+            <form action="">
 
                 <div class="user">
                     <label>Nome</label>
@@ -64,7 +65,8 @@
 
                 <div class="userpass">
                     <label>Senha temporária</label>
-                    <a href="">gerar senha</a>
+                    <button onclick="gerarSenha()" id="gerador" type="button">Gerar senha</button><br>
+                    <span id="senhaTemporaria"></span>
                 </div>
 
                 <div class="create">

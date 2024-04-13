@@ -110,3 +110,18 @@ body>h1 {
 .create {
     margin-top: 50px;
 }
+
+#gerador {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#gerador:hover {
+    color: rgb(163, 30, 30);
+}
+
+span {
+    margin-left: 90px;
+}
