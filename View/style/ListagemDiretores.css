@@ -14,16 +14,9 @@ header {
     justify-content: space-between;
 }
 
-img {
-    width: 75px;
-    height: 75px;
-}
 
 .tit {
-    display: flex;
-    justify-content: center;
-    margin-top: 13px;
-    margin-bottom: 22px;
+    margin-top: 23px;
 }
 
 h1, h3, legend, label {
@@ -31,23 +24,27 @@ h1, h3, legend, label {
     font-family: "Roboto", sans-serif;
 }
 
+.icon {
+    width: 75px;
+    height: 75px;
+}
+
 section {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 fieldset {
     border: 2px solid rgb(56, 56, 56);
     padding-right: 13px;
     border-radius: 10px;
+
 }
 
 legend {
     font-size: 18px;
-    
 }
 
 form {
@@ -55,6 +52,7 @@ form {
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    padding-right: 54px;
 }
 
 input {
@@ -98,11 +96,28 @@ input {
     transition: opacity 0.3s ease;
 }
 
-#submit[disabled] {
-    opacity: 0.6;
+.user {
+    margin-top: 120px;
 }
 
+#pesquisar {
+    width: 560px;
+}
 
 body>h1 {
     font-size: 26px;
+}
+
+.direcaoplus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.plus {
+    margin-top: 7px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }

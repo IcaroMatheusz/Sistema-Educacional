@@ -106,3 +106,16 @@ input {
 body>h1 {
     font-size: 26px;
 }
+
+.create {
+    margin-top: 50px;
+}
+
+label {
+    margin-bottom: 26px;
+    margin-left: 43px;
+}
+
+#user {
+    width: 210px;
+}

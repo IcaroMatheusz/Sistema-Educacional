@@ -60,11 +60,11 @@ header {
     margin-bottom: 22px;
 }
 
-a {
+.quest>a {
     font-family: "Roboto", sans-serif;
     margin-left: 190px;
     text-decoration: none;
-
+    display: block;
 }
 
 .entrar {
