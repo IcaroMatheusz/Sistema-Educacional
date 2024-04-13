@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Usuário</title>
-    <link rel="stylesheet" href="/View/style/ListagemAlunos.css">
+    <link rel="stylesheet" href="/View/style/AlterarDisciplina.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="/Model/RegisterButton.js"></script>
 </head>
 <body>
 
@@ -24,33 +25,30 @@
                 Direção Workstation
             </h1>
         </div>
-
+        
         <div class="pfp">
             <a href="Inicial.html">
-                <img src="/Photos/pfp.png" class="pfp" alt="Perfil" onclick="menu()">
+                <img src="/Photos/pfp.png" alt="Perfil" onclick="menu()">
             </a>
-            
         </div>
 
     </header>
-    <div class="direcaoplus">
-        <h1>Aluno (a)</h1>
-        <a href="/View/pages/CadastroAluno.html">
-            <img src="/Photos/plus.png" class="plus" alt="+">
-        </a>
-        
-    </div>
-    
+
+    <h1>Disciplina</h1>
     <hr>
     <section>
-        
+        <form action="">
 
-                <div class="user">
-                    <label>Digite o nome</label>
-                    <input type="text" name="usuario" id="pesquisar">
-                </div>
+            <label>Digite a disciplina</label>
+            <input type="text" name="usuario" id="user" placeholder="Nome da Disciplina" oninput="validateFields()" maxlength="38">
 
+            <label>Data de Criação</label>
+            <input type="date" name="data" id="data">
 
+            <div class="create">
+                <input type="submit" name="submit" class="envio" id="submit" value="Alterar">
+            </div>
+        </form>
     </section>
 
 </body>

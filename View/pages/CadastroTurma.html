@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Usuário</title>
-    <link rel="stylesheet" href="/View/style/CriarDisciplina.css">
+    <link rel="stylesheet" href="/View/style/CadastroTurma.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -33,16 +33,30 @@
 
     </header>
 
-    <h1>Disciplina</h1>
+    <h1>Turma</h1>
     <hr>
     <section>
         <form action="">
-
-            <label>Digite a disciplina</label>
-            <input type="text" name="usuario" id="user" placeholder="Nome da Disciplina" oninput="validateFields()" maxlength="38">
-
-            <label>Data de Criação</label>
-            <input type="date" name="data" id="data">
+            
+            <div class="nameturma">
+                <label>Digite o nome da turma </label>
+                <input type="text" name="turma" id="turma" placeholder="Nome da Turma">
+            </div>
+            
+            <div class="ano">
+                <label>Digite o Ano</label>
+                <input type="number" name="ano" id="year" maxlength="4">
+            </div>
+            
+            <div class="createdate">
+                <label>Data de Criação</label>
+                <input type="date" name="data" id="data">
+            </div>
+            
+            <div class="vinculo">
+                <button>Vincular Docentes</button>
+                <button>Vincular Alunos</button>
+            </div>
 
             <div class="create">
                 <input type="submit" name="submit" class="envio" id="submit" value="Criar">
