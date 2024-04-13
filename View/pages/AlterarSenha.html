@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Senha</title>
+    <link rel="stylesheet" href="/View/style/AlterarSenha.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="eds">
+            <h3>
+                Edu Station
+            </h3>
+        </div>
+
+        <div class="tit">
+            <h1>
+                Direção Workstation
+            </h1>
+        </div>
+
+        <div class="pfp">
+            <img src="/Photos/pfp.png" alt="Perfil" onclick="menu()">
+        </div>
+
+    </header>
+
+    <section>
+        <fieldset>
+            <legend>Cadastro Direção</legend>
+            <form action="">
+                <form action="Registro.php" method="POST">
+    
+                    <div class="user">
+                        <label>Nome</label>
+                        <input type="text" name="usuario" id="user" placeholder="Nome de Usuário" oninput="validateFields()" maxlength="38">
+                    </div>
+    
+                    <div class="usercpf">
+                        <label>CPF</label>
+                        <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF" oninput="validateFields()" maxlength="11">
+                    </div>
+    
+                    <div class="date">
+                        <label>Data de Nascimento</label>
+                        <input type="date" id="date" name="data" oninput="validateFields()">
+                    </div>
+    
+                    <div class="email">
+                        <label>Email</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" oninput="validateFields()" maxlength="256">
+                    </div>
+
+                    <div class="userpass">
+                        <label>Senha Antiga</label>
+                        <input type="password" id="pass" name="password" placeholder="Senha Antiga" class="pass" oninput="validateFields()" maxlength="12">
+                    </div>
+    
+                    <div class="userpass">
+                        <label>Nova Senha</label>
+                        <input type="password" id="conpass" name="password" placeholder="Nova Senha" class="pass" oninput="validateFields()" maxlength="12">
+                    </div>
+    
+                    <div class="userpass">
+                        <label>Confirmar Senha</label>
+                        <input type="password" id="conpass" name="password" placeholder="Confirmar Senha" class="pass" oninput="validateFields()" maxlength="12">
+                    </div>
+
+                    <div class="create">
+                        <input type="submit" name="submit" class="envio" id="submit" value="Alterar">
+                    </div>
+    
+                    
+                </form>
+            </fieldset>
+    </section>

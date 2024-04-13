@@ -10,19 +10,23 @@ body{
 header {
     border: 1px solid black;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
 .tit {
-    display: flex;
-    justify-content: center;
-    margin-top: 13px;
-    margin-bottom: 22px;
+    margin-top: 23px;
 }
 
 h1, h3, legend, label {
     margin: 0;
     font-family: "Roboto", sans-serif;
+}
+
+img {
+    width: 75px;
+    height: 75px;
 }
 
 section {
@@ -37,11 +41,11 @@ fieldset {
     border: 2px solid rgb(56, 56, 56);
     padding-right: 13px;
     border-radius: 10px;
+
 }
 
 legend {
     font-size: 18px;
-    
 }
 
 form {
@@ -49,6 +53,7 @@ form {
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    padding-right: 94px;
 }
 
 input {
@@ -99,4 +104,36 @@ input {
 
 body>h1 {
     font-size: 26px;
+}
+
+#user {
+    width: 90%px;
+}
+
+.date {
+    margin-left: 93px;
+}
+
+.create {
+    margin-top: 60px;
+}
+
+.alterarsenha {
+    margin-right: 140px;
+}
+
+.buttonpass {
+    width: 159px;
+    padding: 23px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, rgb(93, 70, 199), rgb(101, 59, 197));
+    color: white;
+    margin-left: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonpass:active {
+    border: none;
 }

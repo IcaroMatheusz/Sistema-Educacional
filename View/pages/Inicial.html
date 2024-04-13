@@ -4,8 +4,9 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tela Inicial</title>
     <link rel="stylesheet" href="/View/style/Inicial.css">
+    <script src="/Model/Menu.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,13 @@
         </div>
 
         <div class="pfp">
-            <img src="/Photos/pfp.png" alt="Perfil">
+            <img src="/Photos/pfp.png" alt="Perfil" onclick="menu()">
+            <div id="Menu">
+                <ul>
+                    <a href="/View/pages/Alterar.html"><li>Alterar</li></a>
+                    <li>Sair</li>
+                </ul>
+            </div>
         </div>
 
     </header>

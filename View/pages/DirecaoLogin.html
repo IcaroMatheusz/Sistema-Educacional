@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Direção Login</title>
-    <link rel="stylesheet" href="/View/style/DirecaoLogin.css">
     <script src="/Model/LoginButton.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/View/style/DirecaoLogin.css">
 </head>
 <body>
     <header>
@@ -21,9 +21,10 @@
     </header>
 
     <section>
+    <form>
         <fieldset>
             <legend>Login</legend>
-            <form>
+            
                 <div class="userpass">
                     <label>Usuário</label>
                     <input type="text" name="usuario" id="user" placeholder="Nome de Usuário" oninput="validateFields()" maxlength="38">
@@ -35,17 +36,19 @@
                 </div>
 
                 <div class="quest">
-                    <a href="Registro.html">Primeira vez aqui?</a>
+                    <a href="/View/pages/Registro.html">Primeira vez aqui?</a>
                 </div>
         
                 <div class="quest">
-                    <a href="EsqueceuASenha.html">Esqueceu a senha?</a>
+                    <a href="/View/pages/EsqueceuASenha.html">Esqueceu a senha?</a>
                 </div>
 
                 <div class="entrar">
                     <button type="button" id="enter-button" disabled>Entrar</button>
                 </div>
-            </form>
+            
         </fieldset>
+        </form>
     </section>
+
 </body>
